@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    width: 350px;
+    height: 325px;
+    border-radius: 1rem;
+    background-color: #660000;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    color: #F5E0CC;
+}
+
+.card img {
+    background-color: #F5E0CC;
+    border-radius: 1rem 1rem 0 0;
+    width: 350px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.card figcaption {
+    padding: 8px;
+    align-items: center;
+    padding: 0 0.5rem 1rem 0.5rem;
+}
