@@ -61,7 +61,8 @@ function App() {
       ></input></section>
       <main>
         {filteredPlants.map((plantes) => (
-          <Card key={plantes.specie}
+          <Card
+            key={plantes.specie}
             specie={plantes.specie}
             imgSrc={plantes.imgSrc}
             description={plantes.description}
