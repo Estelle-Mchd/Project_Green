@@ -1,5 +1,6 @@
 import Card from "./components/Card"
 import "./App.css"
+import { useState } from "react";
 
 
 
@@ -37,15 +38,37 @@ const arrayOfPlants = [
 
 ]
 
-function App() {
 
+function App() {
+  const [planteName, setPlanteName] = useState('');
+  const otherName = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPlanteName(event.target.value);
+  };
+  const filteredPlants = arrayOfPlants.filter((plantes) =>
+    plantes.specie.toLowerCase().includes(planteName.toLowerCase())
+  );
   return (
     <>
+      <section>
+        <h1>Project Green</h1>
+        <p>Nourrir la nature et être nourrie par elle. <br /><p className="inputparagraphe">Vous recherchez la plante : {planteName}</p> </p>
+      </section>
+      <section><input
+        type="text"
+        value={planteName}
+        onChange={otherName}
+        placeholder="Quelle plante voulez-vous consulter ?"
+      ></input></section>
       <main>
-        {arrayOfPlants.map((plantes) => (
-          <Card key={plantes.specie} specie={plantes.specie} imgSrc={plantes.imgSrc} description={plantes.description} />
+        {filteredPlants.map((plantes) => (
+          <Card key={plantes.specie}
+            specie={plantes.specie}
+            imgSrc={plantes.imgSrc}
+            description={plantes.description}
+            highlight={planteName && plantes.specie.toLowerCase().includes(planteName.toLowerCase())} />
         )
         )}
+
       </main>
     </>
   )
