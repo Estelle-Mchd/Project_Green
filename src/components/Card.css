@@ -23,21 +23,21 @@
     padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
 
 
     .card {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 600px;
+        width: 500px;
         height: 500px;
 
     }
 
     .card img {
         margin: 0 0 16px 0;
-        width: 600px;
+        width: 500px;
         height: 400px;
     }
 

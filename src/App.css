@@ -13,23 +13,25 @@ footer {
     height: 10vh;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:750px) {
 
 
     header {
-        height: 10vh;
+        height: 50px;
+        background-color: #5B9279;
     }
 
     main {
         display: flex;
-        height: 80vh;
+        height: auto;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
     }
 
 
-
     footer {
-        height: 10vh;
+        height: 50px;
+        background-color: #5B9279;
     }
 }
