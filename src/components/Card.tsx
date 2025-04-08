@@ -7,7 +7,6 @@ interface Plantes {
     highlight: boolean | string;
 }
 
-
 function Card({ specie, imgSrc, description, highlight }: Plantes) {
 
     return (
@@ -17,7 +16,5 @@ function Card({ specie, imgSrc, description, highlight }: Plantes) {
         </figure>
     )
 }
-
-
 
 export default Card
