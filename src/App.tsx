@@ -1,4 +1,6 @@
 import Card from "./components/Card"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 import "./App.css"
 
 
@@ -25,14 +27,18 @@ function App() {
 
   return (
     <>
+      <Header />
+      
       <main>
         {arrayOfPlants.map((plantes) => (
           <Card key={plantes.specie} specie={plantes.specie} imgSrc={plantes.imgSrc} description={plantes.description} />
         )
         )}
       </main>
+      <Footer/>
     </>
   )
 }
 
 export default App
+

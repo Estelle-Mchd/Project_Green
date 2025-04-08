@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #5b9279;
+    
+    
+    }
+
+    header nav a {
+        margin: 0 0 0 8px;
+        text-decoration: none ;
+        color: #F5E0CC;
+        
+        
+    }
+    
