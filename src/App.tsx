@@ -1,5 +1,6 @@
 import Card from "./components/Card"
 import "./App.css"
+import Header from "./components/Header"
 
 
 
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <main>
         {arrayOfPlants.map((plantes) => (
           <Card key={plantes.specie} specie={plantes.specie} imgSrc={plantes.imgSrc} description={plantes.description} />

@@ -6,7 +6,6 @@ interface Plantes {
     description: string;
 }
 
-
 function Card({ specie, imgSrc, description }: Plantes) {
 
     return (
@@ -16,9 +15,5 @@ function Card({ specie, imgSrc, description }: Plantes) {
         </figure>
     )
 }
-
-
-
-
 
 export default Card
