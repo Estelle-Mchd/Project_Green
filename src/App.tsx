@@ -1,8 +1,7 @@
 import Card from "./components/Card"
 import "./App.css"
+import Header from "./components/Header"
 import { useState } from "react";
-
-
 
 const arrayOfPlants = [
   {
@@ -49,6 +48,7 @@ function App() {
   );
   return (
     <>
+      <Header />
       <section>
         <h1>Project Green</h1>
         <p>Nourrir la nature et être nourrie par elle. <br /><p className="inputparagraphe">Vous recherchez la plante : {planteName}</p> </p>
