@@ -1,18 +1,4 @@
 body {
     background-color: #F5E0CC;
-    place-items: center;
-    display: flex;
-    flex-direction: row;
-}
-
-@media screen and (max-width:750px) {
-
-    body {
-        place-items: center;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    margin: 0;
 }
