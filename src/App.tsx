@@ -17,8 +17,24 @@ const arrayOfPlants = [
   {
     specie: "Lamiacées",
     imgSrc: "https://www.arcadie.fr/wp-content/uploads/2023/06/1-576x1024.jpg",
-    description: "Les lamiacées sont une très grande famille de plantes médicinales : aucune des plantes de cette famille n'est toxique, quasiment toutes sont médicinales."
+    description: "Les lamiacées sont une très grande famille de plantes médicinales : aucune des plantes de cette famille n'est toxique, quasiment toutes sont médicinales connues surtout pour agir sur les systèmes respiratoires et digestifs."
   },
+  {
+    specie: "Ombellifères",
+    imgSrc: "https://www.arcadie.fr/wp-content/uploads/2020/02/Arcadie-fenouil-graine-bio-aquarelle.jpg",
+    description: "Les Ombellifères au catalogue d’Arcadie sont essentiellement valorisées pour leurs graines : anis, cumin, fenouil, carvi, coriandre, aneth, leurs racines sont assez majoritairement grosses et pivotantes."
+  },
+  {
+    specie: "Composées",
+    imgSrc: "https://www.arcadie.fr/wp-content/uploads/2019/11/Plante-Infusion-Camomille-matricaire-Bio.png",
+    description: "La famille des Composées, on l’a vu, est caractérisée par ses fleurs très organisées, très serrées les unes contre les autres, elles sont utilisées en médicinales et aromatiques dans les tisanes."
+  },
+  {
+    specie: "Zingibéracées",
+    imgSrc: "https://www.arcadie.fr/wp-content/uploads/2023/06/gingembre_mada-21.jpg",
+    description: "Zingibéracées ? Quésako ?! Que ce soit dans les rhizomes (curcuma, gingembre) ou les graines (cardamome), ces plantes nous offrent un goût assez fort et des propriétés médicinales plutôt citées comme digestives, apéritives."
+  },
+
 ]
 
 function App() {
