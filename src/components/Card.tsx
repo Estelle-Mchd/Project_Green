@@ -4,12 +4,13 @@ interface Plantes {
     specie: string;
     imgSrc: string;
     description: string;
+    highlight: boolean | string;
 }
 
-function Card({ specie, imgSrc, description }: Plantes) {
+function Card({ specie, imgSrc, description, highlight }: Plantes) {
 
     return (
-        <figure className="card">
+        <figure className={`card ${highlight ? 'highlight' : ''}`}>
             <img src={imgSrc} alt={specie} />
             <figcaption>{description}</figcaption>
         </figure>

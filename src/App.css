@@ -1,13 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 header {
     height: 10vh;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1 {
+    justify-content: center;
+    color: #5B9279;
+    text-size-adjust: 6rem;
+    padding: 1rem;
+    font-family: Verdana sans-serif;
+}
+
+section p {
+    text-size-adjust: 3rem;
+    padding: 1rem;
+    font-family: Verdana sans-serif;
+}
+
+section input {
+    margin: 0 auto;
+    width: 30rem;
+}
 
 main {
     height: 80vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 footer {
     height: 10vh;
